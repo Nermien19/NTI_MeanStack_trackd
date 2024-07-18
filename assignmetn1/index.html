@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Shop</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search by product title...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="filter-container">
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+            <select id="category-select" title="select">
+                <option value="">All Categories</option>
+            </select>
+            <button onclick="applyFilters()">Apply Filters</button>
+            <button onclick="sortProductsByPrice()">Sort by Price</button>
+        </div>
+        <div id="products-container"></div>
+        <div class="pagination-container" id="pagination-container"></div>
+        <div class="cart-container">
+            <h2>Cart</h2>
+            <div id="cart-container"></div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
