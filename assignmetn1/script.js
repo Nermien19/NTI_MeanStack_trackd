@@ -92,7 +92,9 @@ const sortProductsByPrice = () => {
 const searchProducts = () => {
     applyFilters();
 };
+const viwDetails =(id)=>{
 
+};
 const addToCart = (id) => {
     const product = products.find(product => product.id === id);
     const cartItem = cart.find(item => item.id === id);
